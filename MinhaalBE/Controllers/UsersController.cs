@@ -33,7 +33,7 @@ namespace MinhaalBE.Controllers
             using var cmd = new MySqlCommand();
             cmd.Connection = con;
 
-            cmd.CommandText = $"INSERT INTO `users` (`Email`, `Password`, `FirstName`, `LastName`, `PassportNumber`, `DateOfBirth`, `Country`, `Nationality`) VALUES('{newUser.Email}', '{newUser.Password}', '{newUser.FirstName}', '{newUser.LastName}', '{newUser.PassportNumber}', '{newUser.DateOfBirth}', '{newUser.Country}', '{newUser.Nationality}');" ;
+            cmd.CommandText = $"INSERT INTO `users` (`Email`, `Password`, `FirstName`, `LastName`, `PassportNumber`, `DateOfBirth`, `Country`, `Nationality`,`role`) VALUES('{newUser.Email}', '{newUser.Password}', '{newUser.FirstName}', '{newUser.LastName}', '{newUser.PassportNumber}', '{newUser.DateOfBirth}', '{newUser.Country}', '{newUser.Nationality}', '{newUser.Role}');" ;
             cmd.ExecuteNonQuery();
 
 
@@ -49,6 +49,7 @@ namespace MinhaalBE.Controllers
     "DateOfBirth":"2022-01-24T17:03:11.767976+05:00",
     "Country":"Pakistan",
     "Nationality":"Pakistani"
+    "role":"admin"
 
              */
             return "Signed up " +newUser.Email + " " + newUser.PassportNumber;
@@ -57,14 +58,17 @@ namespace MinhaalBE.Controllers
         [HttpPost]
         public string LoginUser(LoginUser user)
         {
+
             using var con = new MySqlConnection(cs);
             con.Open();
-            //"SELECT * FROM `users` WHERE Email = "Abubakar" and Password = "1234""
             var stm = $"SELECT * FROM `users` WHERE Email = '{user.Email}' and Password = '{user.Password}'";
             var cmd = new MySqlCommand(stm, con);
 
-            var version = cmd.ExecuteScalar().ToString();
-            Console.WriteLine($"MySQL version: {version}");
+            var res = cmd.ExecuteReader();
+            while (res.Read())
+            {
+                return res["role"].ToString();
+            }
             /**
              * {
     "Email":"abc",
@@ -72,7 +76,7 @@ namespace MinhaalBE.Controllers
 }
              */
             //return "Logged In " + user.Email + " with password " + user.Password;
-            return version.ToString();
+            return "NOT FOUND";
         }
 
 

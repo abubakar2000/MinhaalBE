@@ -1,10 +1,31 @@
 ﻿<Properties StartupConfiguration="{6B80E052-2BC6-4532-9472-6DCFBCB21D92}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="MinhaalBE/Controllers/CandidatesController.cs">
+    <Files>
+      <File FileName="MinhaalBE/Controllers/UsersController.cs" Line="71" Column="14" />
+      <File FileName="MinhaalBE/Models/Users.cs" Line="14" Column="41" />
+      <File FileName="MinhaalBE/Controllers/otpController.cs" Line="42" Column="1" />
+      <File FileName="MinhaalBE/Program.cs" Line="24" Column="20" />
+      <File FileName="MinhaalBE/Controllers/CandidatesController.cs" Line="54" Column="33" />
+      <File FileName="MinhaalBE/Models/Candidates.cs" Line="15" Column="42" />
+      <File FileName="MinhaalBE/Models/LoginUser.cs" Line="7" Column="45" />
+      <File FileName="MinhaalBE/Controllers/WeatherForecastController.cs" Line="27" Column="27" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="MinhaalBE" expanded="True" selected="True" />
+          <Node name="MinhaalBE" expanded="True">
+            <Node name="MinhaalBE" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="CandidatesController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
