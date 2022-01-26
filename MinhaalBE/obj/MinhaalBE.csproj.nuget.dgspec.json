@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ab/Projects/MinhaalBE/MinhaalBE/MinhaalBE.csproj": {}
+    "/Users/ab/Documents/GitHub/MinhaalBE/MinhaalBE/MinhaalBE.csproj": {}
   },
   "projects": {
-    "/Users/ab/Projects/MinhaalBE/MinhaalBE/MinhaalBE.csproj": {
+    "/Users/ab/Documents/GitHub/MinhaalBE/MinhaalBE/MinhaalBE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ab/Projects/MinhaalBE/MinhaalBE/MinhaalBE.csproj",
+        "projectUniqueName": "/Users/ab/Documents/GitHub/MinhaalBE/MinhaalBE/MinhaalBE.csproj",
         "projectName": "MinhaalBE",
-        "projectPath": "/Users/ab/Projects/MinhaalBE/MinhaalBE/MinhaalBE.csproj",
+        "projectPath": "/Users/ab/Documents/GitHub/MinhaalBE/MinhaalBE/MinhaalBE.csproj",
         "packagesPath": "/Users/ab/.nuget/packages/",
-        "outputPath": "/Users/ab/Projects/MinhaalBE/MinhaalBE/obj/",
+        "outputPath": "/Users/ab/Documents/GitHub/MinhaalBE/MinhaalBE/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ab/.config/NuGet/NuGet.Config"
